@@ -1,0 +1,73 @@
+
+/**
+ * Override of misc/vertical-tabs.css.
+ */
+.vertical-tabs {
+  background: #fff url(images/fc.png) repeat-y 0 0; /* LTR */
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  position: relative;
+}
+.vertical-tabs-pane {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.vertical-tabs .vertical-tabs-list {
+  border-bottom: 1px solid #ccc;
+  float: left; /* LTR */
+  font-size: 1em;
+  line-height: 1;
+  margin: 0 -100% -1px 0; /* LTR */
+  padding: 0;
+  width: 240px;
+}
+.vertical-tabs .vertical-tab-button {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+}
+.vertical-tabs .vertical-tab-button a {
+  border-top: 1px solid #ccc;
+  display: block;
+  padding: 10px;
+}
+.vertical-tabs .first a {
+  border-top: 0;
+}
+.vertical-tabs .vertical-tab-button strong {
+  font-size: 0.923em;
+}
+.vertical-tabs .vertical-tab-button .summary {
+  color: #666;
+  display: block;
+  font-size: 0.846em;
+  padding-top: 0.4em;
+}
+.vertical-tabs .vertical-tab-button a:hover,
+.vertical-tabs .vertical-tab-button a:focus {
+  background: #d5d5d5;
+  text-decoration: none;
+  outline: 0;
+}
+.vertical-tabs .selected a,
+.vertical-tabs .selected a:hover,
+.vertical-tabs .selected a:focus,
+.vertical-tabs .selected a:active {
+  background: #fff;
+  border-right-color: #fff; /* LTR */
+  border-top: 1px solid #ccc;
+}
+.vertical-tabs .first.selected a,
+.vertical-tabs .first.selected a:hover {
+  border-top: 0;
+}
+.vertical-tabs .selected a:focus strong {
+  text-decoration: underline;
+}
+.vertical-tabs .vertical-tabs-panes {
+  margin: 0 0 0 245px; /* LTR */
+}
+.vertical-tabs-pane > summary {
+  display: none;
+}

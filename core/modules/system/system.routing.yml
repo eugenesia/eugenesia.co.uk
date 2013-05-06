@@ -1,0 +1,12 @@
+system.cron:
+  pattern: '/cron/{key}'
+  defaults:
+    _controller: '\Drupal\system\CronController::run'
+  requirements:
+    _access_system_cron: 'TRUE'
+system.machine_name_transliterate:
+  pattern: '/machine_name/transliterate'
+  defaults:
+    _controller: '\Drupal\system\MachineNameController::transliterate'
+  requirements:
+    _permission: 'access content'
